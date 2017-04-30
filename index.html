@@ -1,1 +1,127 @@
-"Hello World" 
+
+<html>
+
+ <head>
+   <title>Example pagr
+   </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <style type="text/css">
+   	body {
+   		background-color: lightgreen;
+   		font-size: 18px; 
+   		font-family: 'Arial', sans-serif;
+   		background-image: url("22.jpg");
+   	}
+   	h1 {
+   		color: red;
+
+   	}
+   	.container1 {
+   		padding-left: 20px;
+   		padding-bottom: 30px;
+
+   	}
+   	.container2 {
+   		background-color: blue;
+   		margin-top: 20px;
+   		margin-bottom: 50px;
+   		padding: 20px;
+   		opacity: 0.2;
+   		float: center;
+   		border: 5px dotted red;
+   		border-top-left-radius: 50px;
+   	}
+   	#subheading {
+   		color: yellow;
+   	}
+   	#hobbies {
+   		color: yellow;
+   	}
+   	img {
+   		border-radius: 50%;
+   		/*position: relative;*/
+   		top: 40px;
+   		left: 100px;
+   	}
+   </style>
+ </head>
+ <body>
+    <div class=pic>
+     <MARQUEE BGCOLOR=YELLOW><p>Howdy there!</p><p>Good to see ya!</p></MARQUEE>Hi There!
+     <MARQUEE BGCOLOR=YELLOW><p>Howdy there!</p><p>Good to see ya!</p></MARQUEE>Hi There!
+     <MARQUEE BGCOLOR=YELLOW><p>Howdy there!</p><p>Good to see ya!</p></MARQUEE>Hi There!
+     </div>
+
+
+
+
+ 	<center><h1>
+ 		web workshop
+ 	</h1></center>
+ 	<center><h2 id="subheading">
+ 		welcome guys
+ 	</h2></center>
+ 	<center>whats'up?</center>
+ 	<h3 id="heading">my heading</h3>
+ 	<button id="mybtn">change heading</button>
+ 	<script type="text/javascript">
+ 		var elem= document.getElementById("heading");
+        var btn=document.getElementById("mybtn");
+        btn.addEventListener("click", function() {
+    	elem.innerHTML = "Not the original heading";
+    	elem.style = "border:10px solid black; color:red;";
+    });
+ 	</script>
+
+
+ 	<div>
+ 	<div class="container1">
+ 	<center><img src="im23.jpg" width="200" height="200" alt="Image not available"></center>
+ 	<hr>
+ 		<b>Hobbies:</b>
+ 		<ol id="hobbies">
+ 			<li data-hobby="R">Reading</li>
+ 			<li data-hobby="f">fitness</li>
+ 		</ol>
+ 	</div>
+ 	<table border="3">
+ 		<tr>
+ 			<th>Team</th>
+ 			<th>point</th>
+ 		</tr>
+ 		<tr>
+ 			<td>csk</td>
+ 			<td>20</td>
+ 		</tr>
+ 	</table>
+ 	<hr>
+ 	<div class="container2">
+ 	form:
+ 	<form action="#" method="Get">
+ 		name:<input type="text" name="myname">
+ 		<br>
+ 		password:<input type="password" name="password">
+ 		<br>
+ 		preference: <label><input type="radio" name="preference" value="Veg">Veg</label>
+ 	    <label><input type="radio" name="preference" value="Non-veg">Non-veg</label>
+ 	    <br>
+ 	    Games: <label><input type="checkbox" name="Games" value="cricket">cricket</label>
+ 		       <label><input type="checkbox" name="Games" value="football">football</label>
+ 		       <label><input type="checkbox" name="Games" value="tenis">tenis</label>
+ 		       <br>
+ 		<input type="submit" value="Submit" style="font-weight: bold">
+ 	</div>
+ 	</form>
+ 	<p>
+ 		hava a
+ 	</p>
+ 	<p>
+ 		nice day
+ 	</p>
+ 	</div>
+ 	<hr>
+ 	<a href="http://www.google.com">Google</a>
+
+
+ </body>
+ </html>  
